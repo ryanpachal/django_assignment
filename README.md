@@ -33,19 +33,21 @@ exit
 Migrate DB:
 
 python manage.py migrate
-  
-Populate DB with test data:
 
-python toronto_locations_into_db.py
-  
 Run server:
 
 python manage.py runserver
   
+Populate DB with test data (while server is running):
+
+python toronto_locations_into_db.py
+  
 Try different queries such as:
   
 localhost:8000/rest_api/distances?latitude=43.654262&longitude=-79.385975&radius=1000&max_count=5
+
 localhost:8000/rest_api/distances?latitude=43.654262&longitude=-79.385975&radius=1000&max_count=5&Categroy=Library
+
 localhost:8000/rest_api/locations?name=Bendale
   
   
